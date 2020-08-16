@@ -252,8 +252,9 @@ const Layout = ({ children, color }: LayoutProps) => {
           <Main>{children}</Main>
           <Footer color={color}>
             <Box p={[6, 6, 8]} fontSize={0}>
-              Starter by <a href="https://www.lekoarts.de/en">LekoArts</a>.<br />
-              <a href="https://github.com/LekoArts/gatsby-starter-portfolio-jodie">Source</a>.
+              <Link to="/impressum">Impressum</Link>
+              <br></br>
+              <Link to="/datenschutz">Datenschutz</Link>
             </Box>
           </Footer>
         </Wrapper>

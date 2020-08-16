@@ -1,8 +1,6 @@
-- name: "Projekte"
-  link: "/projekte"
+- name: "Alle Leistungen"
+  link: "/leistungen"
+- name: "Angebot anfragen"
+  link: "/kontakt"
 - name: Karriere
   link: /karriere
-- name: "Instagram"
-  link: "/instagram"
-- name: "Impressum"
-  link: "/impressum"
