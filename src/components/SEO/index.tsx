@@ -1,8 +1,6 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import { useStaticQuery, graphql } from 'gatsby'
-import Facebook from './facebook'
-import Twitter from './twitter'
 
 type Props = {} & typeof defaultProps
 
@@ -32,8 +30,6 @@ const SEO = ({ title, desc, banner, pathname, node, individual }: Props) => {
       siteLanguage,
       ogLanguage,
       author,
-      twitter,
-      facebook,
     },
   } = site
 
@@ -182,16 +178,6 @@ const SEO = ({ title, desc, banner, pathname, node, individual }: Props) => {
         {individual && <script type="application/ld+json">{JSON.stringify(schemaArticle)}</script>}
         <script type="application/ld+json">{JSON.stringify(breadcrumb)}</script>
       </Helmet>
-      <Facebook
-        desc={seo.description}
-        image={seo.image}
-        title={seo.title}
-        type={individual ? 'article' : 'website'}
-        url={seo.url}
-        locale={ogLanguage}
-        name={facebook}
-      />
-      <Twitter title={seo.title} image={seo.image} desc={seo.description} username={twitter} />
     </>
   )
 }
@@ -213,8 +199,6 @@ const query = graphql`
         siteLanguage
         ogLanguage
         author
-        twitter
-        facebook
       }
     }
   }

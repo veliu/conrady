@@ -40,7 +40,7 @@ const Leistungen: React.FunctionComponent<PageProps> = ({ data: { leistungen } }
 
   return (
     <Layout color="#000">
-      <SEO title="Leistungen | Conrady Gartenbau" />
+      <SEO title="Leistungen | Conrady Gartengestaltung" />
       <Area style={pageAnimation}>
         {leistungen.nodes.map((leistung) => (
           <GridItem key={leistung.slug} to={leistung.slug} aria-label={`Leistungen "${leistung.title}"`}>

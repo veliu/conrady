@@ -7,17 +7,16 @@ module.exports = {
   siteHeadline: 'Conrady Gartengestaltung', // Headline for schema.org JSONLD
   siteUrl: 'https://gartenbauhofheim.de', // Domain of your site. No trailing slash!
   siteLanguage: 'de', // Language Tag on <html> element
-  siteLogo: '/logos/logo.png', // Used for SEO and manifest
+  siteLogo: '/logos/logo.svg', // Used for SEO and manifest
   siteDescription: 'Gartenbau in Hofheim von Conrady Gartengestaltung - Ihr Garten Ist Unser Auftrag',
   author: 'Lirim Veliu', // Author for schema.org JSONLD
 
-  // siteFBAppID: '123456789', // Facebook App ID - Optional
-  userTwitter: '@jodie', // Twitter Username
-  ogSiteName: 'jodie', // Facebook Site Name
+  ogSiteName: '', // Facebook Site Name
   ogLanguage: 'de_DE', // og:language
   googleAnalyticsID: 'UA-XXXXXX-X',
 
   // Manifest and Progress color
-  themeColor: '#db7436',
-  backgroundColor: '#3b3c4f',
+  themeColor: '#4b7c2f',
+  backgroundColor: '#575756',
+  cookieText: 'Cookies helfen uns bei der Bereitstellung unserer Inhalte und Dienste. Durch die weitere Nutzung der Webseite stimmen Sie der Verwendung von Cookies zu.'
 }

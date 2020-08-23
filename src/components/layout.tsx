@@ -6,7 +6,8 @@ import 'typeface-work-sans'
 import { Box, Flex } from '../elements'
 import theme from '../../config/theme'
 import reset from '../styles/reset'
-import Logo from './logo'
+import Logo from './logo.svg'
+import CookieConsent from 'react-cookie-consent';
 
 const GlobalStyles = createGlobalStyle`
   *::before,
@@ -73,7 +74,7 @@ const GlobalStyles = createGlobalStyle`
     margin: 0;
     padding: 0;
     color: black;
-    font-family: 'Work Sans', '-apple-system', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    font-family: 'Source Sans Pro', '-apple-system', 'Roboto', 'Helvetica', 'Arial', sans-serif;
     background: white;
     font-size: 18px;
   }
@@ -111,7 +112,7 @@ const Wrapper = styled.div`
   }
 `
 
-const SideBarInner = styled(Box)<{ bg: string }>`
+const SideBarInner = styled(Box) <{ bg: string }>`
   position: fixed;
   height: 100%;
   width: ${(props) => props.theme.sidebarWidth.big};
@@ -136,7 +137,7 @@ const SideBarInner = styled(Box)<{ bg: string }>`
   }
 `
 
-const Nav = styled(Flex)<{ color: string }>`
+const Nav = styled(Flex) <{ color: string }>`
   a {
     text-decoration: none;
     color: ${(props) => readableColor(`${props.color}`)};
@@ -228,9 +229,9 @@ const Layout = ({ children, color }: LayoutProps) => {
               alignItems={['center', 'center', 'center', 'flex-start']}
               justifyContent="space-between"
             >
-              <Box width={['3rem', '4rem', '5rem', '6rem']}>
-                <Link to="/" aria-label="LekoArts, Back to Home">
-                  <Logo />
+              <Box width={['5rem', '11rem', '13rem', '15rem']}>
+                <Link to="/" aria-label="Home">
+                  <img src={Logo} alt="Logo" />
                 </Link>
               </Box>
               <Nav
@@ -258,6 +259,13 @@ const Layout = ({ children, color }: LayoutProps) => {
             </Box>
           </Footer>
         </Wrapper>
+        <CookieConsent
+          location="bottom"
+          buttonText="Okay!"
+          declineButtonText="Decline"
+          cookieName="gatsby-gdpr-google-analytics">
+          Cookies helfen uns bei der Bereitstellung unserer Inhalte und Dienste. Durch die weitere Nutzung der Webseite stimmen Sie der Verwendung von Cookies zu.
+        </CookieConsent>
       </>
     </ThemeProvider>
   )

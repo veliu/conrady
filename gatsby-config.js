@@ -19,8 +19,7 @@ module.exports = {
     siteLanguage: config.siteLanguage,
     ogLanguage: config.ogLanguage,
     author: config.author,
-    twitter: config.userTwitter,
-    facebook: config.ogSiteName,
+    cookieText: config.cookieText,
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -71,5 +70,26 @@ module.exports = {
       },
     },
     'gatsby-plugin-offline',
+    {
+      resolve: "gatsby-plugin-web-font-loader",
+          options: {
+            custom: {
+              families: ["Source Sans Pro"],
+              urls: ["https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap"],
+            },
+          },
+    },
+    {
+      resolve: `gatsby-plugin-gdpr-cookies`,
+      options: {
+        googleAnalytics: {
+          trackingId: 'YOUR_GOOGLE_ANALYTICS_TRACKING_ID',
+          // Setting this parameter is optional
+          anonymize: true
+        },
+        // Defines the environments where the tracking should be available  - default is ["production"]
+        environments: ['production', 'development']
+      },
+    },
   ],
 }
