@@ -1,6 +1,4 @@
 - name: "Alle Leistungen"
   link: "/leistungen"
-- name: "Angebot anfragen"
-  link: "/kontakt"
-- name: Karriere
-  link: /karriere
+- name: Über uns
+  link: /ueber

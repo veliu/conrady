@@ -9,7 +9,7 @@ import { Box, AnimatedBox, Button } from '../elements'
 import SEO from '../components/SEO'
 
 const PBox = styled(AnimatedBox)`
-  max-width: 1400px;
+  max-width: 1000px;
   margin: 0 auto;
 `
 
@@ -122,7 +122,7 @@ const Project: React.FunctionComponent<PageProps> = ({ data: { project, images }
       <PBox style={{ textAlign: 'center' }} py={10} px={[6, 6, 8, 10]}>
         <h2>Wir helfen Ihnen bei Ihrem Garten-Projekt</h2>
         <PButton color={project.color} py={4} px={8}>
-          Kataktiere Sie uns!
+          Kontaktieren Sie uns!
         </PButton>
       </PBox>
     </Layout>

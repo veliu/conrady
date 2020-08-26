@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 export default function Datenschutz() {
     return (
         <Layout>
-            <div>
+            <div style={{ padding: '2rem' }}>
                 <h1>Datenschutz&shy;erkl&auml;rung</h1>
                 <h2>1. Datenschutz auf einen Blick</h2>
                 <h3>Allgemeine Hinweise</h3> <p>Die folgenden Hinweise geben einen einfachen &Uuml;berblick dar&uuml;ber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie pers&ouml;nlich identifiziert werden k&ouml;nnen. Ausf&uuml;hrliche Informationen zum Thema Datenschutz entnehmen Sie unserer unter diesem Text aufgef&uuml;hrten Datenschutzerkl&auml;rung.</p>

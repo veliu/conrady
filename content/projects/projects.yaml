@@ -2,7 +2,7 @@
   title_detail: "Pflasterarbeiten"
   slug: "/pflasterarbeiten"
   category: "Gartengestaltung"
-  color: "#575756"
+  color: "black"
   images: "pflasterarbeiten"
   cover: "./pflasterarbeiten/pflaster-1.jpg"
   desc: "Wir machen super Pflasterarbeiten"

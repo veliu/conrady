@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 export default function Impressum() {
   return (
     <Layout>
-      <div>
+      <div style={{ padding: '2rem' }}>
         <h2>Impressum</h2>
         <p>Adrian Conrady<br />
             (Garten- Landschaftsbauer)</p>

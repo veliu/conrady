@@ -28,16 +28,16 @@ type PageProps = {
 
 const Area = styled(animated.div)`
   display: grid;
+  grid-gap: 5px;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 35vw 40vw 25vw;
+  grid-template-rows: 35vw 40vw;
   grid-template-areas:
   'first-project first-project about-us about-us'
-  'three-projects three-projects three-projects three-projects'
   'three-projects three-projects three-projects three-projects';
 
   @media (max-width: ${(props) => props.theme.breakpoints[3]}) {
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 35vw 30vw 30vw 25vw;
+    grid-template-rows: 35vw 46vw;
 
     grid-template-areas:
       'first-project first-project about-us about-us'
@@ -58,7 +58,7 @@ const Area = styled(animated.div)`
 
   @media (max-width: ${(props) => props.theme.breakpoints[0]}) {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 50vw);
+    grid-template-rows: repeat(5, 50vw);
 
     grid-template-areas:
       'first-project'
@@ -79,6 +79,7 @@ const AboutUs = styled(GridItem)`
 
 const ThreeProjects = styled.div`
   grid-area: three-projects;
+  grid-gap: 5px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 
@@ -111,7 +112,7 @@ const Index: React.FunctionComponent<PageProps> = ({ data: { firstProject, three
             </GridItem>
           ))}
         </ThreeProjects>
-        <AboutUs to="/ueber-uns" aria-label="Über uns">
+        <AboutUs to="/ueber" aria-label="Über uns">
           <Img fluid={aboutUs.childImageSharp.fluid} />
           <span>Über uns</span>
         </AboutUs>
