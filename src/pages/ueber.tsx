@@ -4,9 +4,9 @@ import { graphql } from 'gatsby'
 import { ChildImageSharp } from '../types'
 import SEO from '../components/SEO'
 import styled from 'styled-components'
-import { transparentize, readableColor } from 'polished'
+import { readableColor } from 'polished'
 import { config, useSpring, animated } from 'react-spring'
-import { Box, AnimatedBox, Button } from '../elements'
+import { AnimatedBox, Button } from '../elements'
 import Img from 'gatsby-image'
 
 type PageProps = {
@@ -58,6 +58,7 @@ const Adrian = styled.div`
   grid-area: adrian;
 `
 const Text = styled.div`
+  padding: 1rem;
   grid-area: text;
 `
 
@@ -83,7 +84,7 @@ const Ueber: React.FunctionComponent<PageProps> = ({ data: { aboutUs } }) => {
             </PBox>
             <Area>
                 <Text>
-                    <p>Mein Name ist Adrian und liebe Gärten</p>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
                 </Text>
                 <Adrian>
                     <Img alt="Über uns" key={aboutUs.childImageSharp.fluid.src} fluid={aboutUs.childImageSharp.fluid} />

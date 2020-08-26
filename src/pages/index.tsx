@@ -50,10 +50,11 @@ const Area = styled(animated.div)`
     grid-template-rows: repeat(5, 38vw);
 
     grid-template-areas:
-      'first-project about-us'
+      'first-project first-project'
       'three-projects three-projects'
       'three-projects three-projects'
-      'three-projects three-projects';
+      'three-projects three-projects'
+      'about-us about-us';
   }
 
   @media (max-width: ${(props) => props.theme.breakpoints[0]}) {
@@ -62,10 +63,10 @@ const Area = styled(animated.div)`
 
     grid-template-areas:
       'first-project'
-      'about-us'
       'three-projects'
       'three-projects'
-      'three-projects';
+      'three-projects'
+      'about-us';
   }
 `
 
