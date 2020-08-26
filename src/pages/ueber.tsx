@@ -8,11 +8,12 @@ import { readableColor } from 'polished'
 import { config, useSpring, animated } from 'react-spring'
 import { AnimatedBox, Button } from '../elements'
 import Img from 'gatsby-image'
+import { Link } from 'gatsby'
 
 type PageProps = {
-    data: {
-      aboutUs: ChildImageSharp
-    }
+  data: {
+    aboutUs: ChildImageSharp
+  }
 }
 
 const Area = styled.div`
@@ -46,7 +47,7 @@ const PBox = styled(AnimatedBox)`
   margin: 0 auto;
 `
 
-const PButton = styled(Button)<{ color: string }>`
+const PButton = styled(Button) <{ color: string }>`
   background: ${(props) => (props.color === 'white' ? 'black' : props.color)};
   color: ${(props) => readableColor(props.color === 'white' ? 'black' : props.color)};
 `
@@ -58,46 +59,50 @@ const Adrian = styled.div`
   grid-area: adrian;
 `
 const Text = styled.div`
-  padding: 1rem;
+  padding-right: 1rem;
   grid-area: text;
 `
 
 const Ueber: React.FunctionComponent<PageProps> = ({ data: { aboutUs } }) => {
-    const categoryAnimation = useSpring({
-        config: config.slow,
-        from: { opacity: 0, transform: 'translate3d(0, -30px, 0)' },
-        to: { opacity: 1, transform: 'translate3d(0, 0, 0)' },
-      })
+  const categoryAnimation = useSpring({
+    config: config.slow,
+    from: { opacity: 0, transform: 'translate3d(0, -30px, 0)' },
+    to: { opacity: 1, transform: 'translate3d(0, 0, 0)' },
+  })
 
-    const titleAnimation = useSpring({ config: config.slow, delay: 300, from: { opacity: 0 }, to: { opacity: 1 } })
-    const descAnimation = useSpring({ config: config.slow, delay: 600, from: { opacity: 0 }, to: { opacity: 1 } })
-    
-    return(
-        <Layout color="black">
-            <SEO />
-            <PBox py={10} px={[6, 6, 8, 10]}>
-                <Category style={categoryAnimation}>Über uns</Category>
-                <animated.h1 style={titleAnimation}>Conrady Gartengeslatung</animated.h1>
-                <Description style={descAnimation}>
-                    <div dangerouslySetInnerHTML={{ __html: "Das sind wir" }} />
-                </Description>
-            </PBox>
-            <Area>
-                <Text>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-                </Text>
-                <Adrian>
-                    <Img alt="Über uns" key={aboutUs.childImageSharp.fluid.src} fluid={aboutUs.childImageSharp.fluid} />
-                </Adrian>
-            </Area>
-            <PBox style={{ textAlign: 'center' }} py={10} px={[6, 6, 8, 10]}>
-                <h2>Wir helfen Ihnen bei Ihrem Garten-Projekt</h2>
-                <PButton color="#b2b2b2" py={4} px={8}>
-                    Kontaktieren Sie uns!
-                </PButton>
-            </PBox>
-        </Layout>
-    )
+  const titleAnimation = useSpring({ config: config.slow, delay: 300, from: { opacity: 0 }, to: { opacity: 1 } })
+  const descAnimation = useSpring({ config: config.slow, delay: 600, from: { opacity: 0 }, to: { opacity: 1 } })
+
+  return (
+    <Layout color="black">
+      <SEO />
+      <PBox py={10} px={[6, 6, 8, 10]}>
+        <Category style={categoryAnimation}>Über uns</Category>
+        <animated.h1 style={titleAnimation}>Conrady Gartengeslatung</animated.h1>
+        <Description style={descAnimation}>
+          <div dangerouslySetInnerHTML={{ __html: "Das sind wir" }} />
+        </Description>
+      </PBox>
+      <Area>
+        <Text>
+          <p>[Ein paar Sätze...]</p>
+          <p>Lassen sie sich kostenlos von uns beraten und profitieren sie von unserer langjährigen Erfahrung in allen Bereichen der Gartengestaltung und Pflege. Wir gestalten ihren Garten individuell nach ihrem Geschmack und schaffen ihnen ihre persönliche Oase für Zuhause.</p>
+          <p>Ihr Garten kann mehr!</p>
+        </Text>
+        <Adrian>
+          <Img alt="Über uns" key={aboutUs.childImageSharp.fluid.src} fluid={aboutUs.childImageSharp.fluid} />
+        </Adrian>
+      </Area>
+      <PBox style={{ textAlign: 'center' }} py={10} px={[6, 6, 8, 10]}>
+        <h2>Wir helfen Ihnen bei Ihrem Garten-Projekt</h2>
+        <Link to="/kontakt" >
+          <PButton color="#b2b2b2" py={4} px={8}>
+            Kontaktieren Sie uns!
+          </PButton>
+        </Link>
+      </PBox>
+    </Layout>
+  )
 }
 
 export default Ueber;

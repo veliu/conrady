@@ -18,5 +18,5 @@ module.exports = {
   // Manifest and Progress color
   themeColor: '#4b7c2f',
   backgroundColor: '#575756',
-  cookieText: 'Cookies helfen uns bei der Bereitstellung unserer Inhalte und Dienste. Durch die weitere Nutzung der Webseite stimmen Sie der Verwendung von Cookies zu.'
+  cookieText: 'Cookies helfen uns bei der Bereitstellung unserer Inhalte und Dienste. Durch die weitere Nutzung der Webseite stimmen Sie der Verwendung von Cookies zu.',
 }
