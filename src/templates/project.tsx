@@ -7,13 +7,14 @@ import { config, useSpring, animated } from 'react-spring'
 import Layout from '../components/layout'
 import { Box, AnimatedBox, Button } from '../elements'
 import SEO from '../components/SEO'
+import { Link } from 'gatsby'
 
 const PBox = styled(AnimatedBox)`
   max-width: 1000px;
   margin: 0 auto;
 `
 
-const Content = styled(Box)<{ bg: string }>`
+const Content = styled(Box) <{ bg: string }>`
   background-color: ${(props) => transparentize(0.9, props.bg)};
 
   .gatsby-image-wrapper:not(:last-child) {
@@ -39,7 +40,7 @@ const Description = styled(animated.div)`
   line-height: 1.58;
 `
 
-const PButton = styled(Button)<{ color: string }>`
+const PButton = styled(Button) <{ color: string }>`
   background: ${(props) => (props.color === 'white' ? 'black' : props.color)};
   color: ${(props) => readableColor(props.color === 'white' ? 'black' : props.color)};
 `
@@ -121,9 +122,11 @@ const Project: React.FunctionComponent<PageProps> = ({ data: { project, images }
       </Content>
       <PBox style={{ textAlign: 'center' }} py={10} px={[6, 6, 8, 10]}>
         <h2>Wir helfen Ihnen bei Ihrem Garten-Projekt</h2>
-        <PButton color={project.color} py={4} px={8}>
-          Kontaktieren Sie uns!
-        </PButton>
+
+        <Link to="/kontakt" >
+          <PButton color={project.color} py={4} px={8}>Kontaktieren Sie uns!</PButton>
+        </Link>
+
       </PBox>
     </Layout>
   )
