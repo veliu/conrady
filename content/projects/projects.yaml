@@ -5,28 +5,38 @@
   color: "black"
   images: "pflasterarbeiten"
   cover: "./pflasterarbeiten/pflaster-1.jpg"
-  desc: "Wir machen super Pflasterarbeiten"
+  desc: "Vorbei sind die Zeiten von Doppel T Pflaster, allgemein auch bekannt als Knochenpflaster. Der Markt hat sich in den
+letzten Jahren stark entwickelt und bietet mittlerweile eine riesige Bandbreite an verschiedensten Pflastersteinen.
+Wir helfen bei der Auswahl und lösen auch die schwierigsten Probleme bei Höhenunterschieden oder Wasserablauf."
 - title: "Terassen"
   title_detail: "Terassen"
   slug: "/terassen"
   category: "Gartengestaltung"
-  color: "#575756"
+  color: "black"
   images: "terassen"
   cover: "./terassen/terasse-1.jpg"
-  desc: "Terassen aus Stein und Holz"
+  desc: "Eine schöne Terrasse gehört zu jedem guten Garten. Ob Beton oder Keramik, Echtholz oder WPC. Es gibt eine Reihe
+von Möglichkeiten, sich seine ganz persönliche Oase für Zuhause zu schaffen. Mit unserer jahrelangen Erfahrung in
+diesem Bereich sind wir ein kompetenter Partner für die Planung und Umsetzung Ihrer neuen Terrasse."
 - title: "Zäune"
   title_detail: "Zäune"
   slug: "/zaeune"
   category: "Gartengestaltung"
-  color: "#575756"
+  color: "black"
   images: "zaeune"
   cover: "./zaeune/zaun-1.jpg"
-  desc: "Schöne Zäune"
+  desc: "Ein Zaun kann mehr sein als eine einfache Begrenzung. Der klassische Jägerzaun? Ein schlichter Metallzaun?
+Oder doch etwas Extravagantes? Alles kein Problem! Wir helfen Ihnen bei der Auswahl des Materials und der
+Umsetzung Ihres neuen Gartenzauns."
 - title: "Natursteindekor"
   title_detail: "Natursteindekor"
   slug: "/natursteindekor"
   category: "Gartengestaltung"
-  color: "#575756"
+  color: "black"
   images: "natursteindekor"
   cover: "./natursteindekor/natursteindekor-1.jpg"
-  desc: "natursteindekor"
+  desc: "Es muss nicht immer Beton sein! Natursteine sind eine schöne und elegante Alternative zum gewöhnlichen Betonstein.
+In nahezu allen Einsatzbereichen wie z.B als Weg, Mauer oder Bodenbelag im Außenbereich. Durch ihre vielfältigen
+Arten, Größen und Farben bringen sich Natursteine in jeden Stil, von modern bis mediterran ein und schaffen eine
+natürliche Umgebung zum Wohlfühlen.
+Mit unseren kompetenten Partnern beraten wie Sie gerne zu diesem Thema."

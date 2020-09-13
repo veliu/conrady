@@ -17,16 +17,36 @@ type PageProps = {
 }
 
 const Area = styled.div`
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 4rem;
   box-sizing: border-box;
-  margin: 0 auto;
   display: grid;
-  height: 65vh;
+  grid-gap: 1rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  margin: 0 auto;
+  max-width: 1000px;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 65vh;
-  grid-template-areas: 'text adrian adrian'
+  
+  grid-template-areas: 'text adrian';
+
+  @media (max-width: ${(props) => props.theme.breakpoints[3]}) {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  @media (max-width: ${(props) => props.theme.breakpoints[1]}) {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  @media (max-width: ${(props) => props.theme.breakpoints[0]}) {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    grid-template-columns: 1fr;
+
+    grid-template-areas:
+      'adrian'
+      'text';
+  }
 `
 const Category = styled(AnimatedBox)`
   letter-spacing: 0.05em;
@@ -85,9 +105,15 @@ const Ueber: React.FunctionComponent<PageProps> = ({ data: { aboutUs } }) => {
       </PBox>
       <Area>
         <Text>
-          <p>[Ein paar Sätze...]</p>
-          <p>Lassen sie sich kostenlos von uns beraten und profitieren sie von unserer langjährigen Erfahrung in allen Bereichen der Gartengestaltung und Pflege. Wir gestalten ihren Garten individuell nach ihrem Geschmack und schaffen ihnen ihre persönliche Oase für Zuhause.</p>
-          <p>Ihr Garten kann mehr!</p>
+          <span>
+            Nachdem ich 2007 meine Ausbildung zum Gärtner abgeschlossen habe, arbeitete ich in den verschiedensten Bereichen
+            des Gartenbaus. 2016 gründete ich die Firma Conrady Gartengestaltung, die mittlerweile aus einem eingespieltem,
+            fünfköpfigem Team besteht und schon viele Gartenbesitzer glücklich gemacht hat.
+          </span>
+          <p> 
+            Lassen auch Sie sich kostenlos von uns beraten und profitieren Sie von unserer jahrelangen Erfahrung. 
+            Wir gestalten Ihre Außenanlage individuell nach Ihren Vorstellungen und schaffen Ihnen Ihre persönliche Oase für Zuhause.
+          </p>
         </Text>
         <Adrian>
           <Img alt="Über uns" key={aboutUs.childImageSharp.fluid.src} fluid={aboutUs.childImageSharp.fluid} />

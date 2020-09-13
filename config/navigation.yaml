@@ -1,5 +1,5 @@
-- name: "Alle Leistungen"
-  link: "/leistungen"
+- name: "Sonstige Leistungen"
+  link: "/sonstige-leistungen"
 - name: Über uns
   link: /ueber
 - name: Kontakt
