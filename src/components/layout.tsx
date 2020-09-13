@@ -160,6 +160,7 @@ const Nav = styled(Flex) <{ color: string }>`
     }
 
     @media (max-width: ${(props) => props.theme.breakpoints[0]}) {
+      line-height: 1;
       font-size: ${(props) => props.theme.fontSizes[0]};
       margin-left: ${(props) => props.theme.space[2]};
     }
