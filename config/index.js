@@ -13,7 +13,7 @@ module.exports = {
 
   ogSiteName: '', // Facebook Site Name
   ogLanguage: 'de_DE', // og:language
-  googleAnalyticsID: 'UA-XXXXXX-X',
+  googleAnalyticsID: 'UA-177918872-1',
 
   // Manifest and Progress color
   themeColor: '#4b7c2f',

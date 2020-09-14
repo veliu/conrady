@@ -122,7 +122,7 @@ const Ueber: React.FunctionComponent<PageProps> = ({ data: { aboutUs } }) => {
       <PBox style={{ textAlign: 'center' }} py={10} px={[6, 6, 8, 10]}>
         <h2>Wir helfen Ihnen bei Ihrem Garten-Projekt</h2>
         <Link to="/kontakt" >
-          <PButton color="#b2b2b2" py={4} px={8}>
+          <PButton color="#4b7c2f" py={4} px={8}>
             Kontaktieren Sie uns!
           </PButton>
         </Link>
