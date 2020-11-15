@@ -203,7 +203,7 @@ const Footer = styled.footer<{ color: string }>`
 type LayoutProps = { children: React.ReactNode } & typeof defaultProps
 
 const defaultProps = {
-  color: 'white',
+  color: 'black',
 }
 
 interface QueryResult {
