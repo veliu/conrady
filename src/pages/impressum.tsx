@@ -11,7 +11,7 @@ export default function Impressum() {
         <p>Rheingaustr. 98<br />
             65719 Hofheim am Taunus</p>
         <p>Telefon: 0176/82148436</p>
-        <p>Email: conrady at gartenbauhofheim punkt de</p>
+        <p>Email: kontakt at gartengestaltung minus hofheim punkt de</p>
         <p>Umsatzsteuer-Identifikationsnummer: 04681031964</p>
         <p>&nbsp;</p>
         <p><strong>Haftungsauschluss</strong></p>
