@@ -172,6 +172,7 @@ const SEO = ({ title, desc, banner, pathname, node, individual }: Props) => {
         <html lang={siteLanguage} />
         <meta name="description" content={seo.description} />
         <meta name="image" content={seo.image} />
+        <meta name="google-site-verification" content="-E84Fdo58NaerCE4qtr-_987LG9s_jQTrz3pGPD1MpE" />
         {/* Insert schema.org data conditionally (webpage/article) + everytime (breadcrumbs) */}
         {!individual && <script type="application/ld+json">{JSON.stringify(schemaOrgWebPage)}</script>}
         {individual && <script type="application/ld+json">{JSON.stringify(schemaArticle)}</script>}
