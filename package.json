@@ -59,7 +59,7 @@
     "react-icons": "^3.11.0",
     "react-share": "^4.2.1",
     "react-spring": "^8.0.27",
-    "sharp": "^0.25.4",
+    "sharp": "^0.30.5",
     "styled-components": "^5.1.1",
     "styled-system": "^5.1.5",
     "typeface-work-sans": "^0.0.72",
