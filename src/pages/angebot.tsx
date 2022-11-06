@@ -40,9 +40,9 @@ export default function angebot() {
             <SEO />
             <PBox py={10} px={[6, 6, 8, 10]}>
                 <Category style={categoryAnimation}>Conrady Gartengestaltung</Category>
-                <animated.h1 style={titleAnimation}>Conrady Gartengestaltung</animated.h1>
+                <animated.h1 style={titleAnimation}>Angebotsanfrage</animated.h1>
                 <Description style={descAnimation}>
-                    <div dangerouslySetInnerHTML={{ __html: "Conrady Gartengestaltung" }} />
+                    <div dangerouslySetInnerHTML={{ __html: "Hier erhalten Sie ein unverbindliches Angebot" }} />
                 </Description>
             </PBox>
             <PBox py={10} px={[6, 6, 8, 10]}>
