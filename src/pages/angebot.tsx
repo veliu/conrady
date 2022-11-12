@@ -43,14 +43,14 @@ export default function angebot() {
                 <animated.h1 style={titleAnimation}>Angebotsanfrage</animated.h1>
                 <Description style={descAnimation}>
                     <div dangerouslySetInnerHTML={{ __html: "Hier erhalten Sie ein unverbindliches Angebot" }} />
+                    <div>
+                        Damit wir vor dem ersten Gespräch schon einen kleinen Überblick über Ihre Wünsche und Anliegen bekommen, 
+                        füllen Sie bitte das unten folgende Formular aus. Ein Mitarbeiter aus dem jeweiligen Fachbereich setzt 
+                        sich dann zeitnah mit Ihnen in Verbindung.
+                    </div>
                 </Description>
             </PBox>
             <PBox py={10} px={[6, 6, 8, 10]}>
-                <div>
-                    Damit wir vor dem ersten Gespräch schon einen kleinen Überblick über Ihre Wünsche und Anliegen bekommen, 
-                    füllen Sie bitte das unten folgende Formular aus. Ein Mitarbeiter aus dem jeweiligen Fachbereich setzt 
-                    sich dann zeitnah mit Ihnen in Verbindung.
-                </div>
                 <ArenguForm id="166774413746737620" />
             </PBox>
         </Layout>
